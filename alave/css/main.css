@@ -1,0 +1,296 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'NanumSquare';
+	background-color: #030404;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+table {
+	border-spacing: 0;
+}
+.header-container {
+	width: 100%;
+	height: 98px;
+	color: #F3F3F3;
+	border-bottom: 0.5px solid #3b3b3b;
+}
+.header-container img {
+	margin: 25px 0 40px 100px;
+	float: left;
+}
+.header-container .logo .title {
+	padding: 35px 50px 0 10px;
+	font-size: 32px;
+	font-weight: 800;
+	float: left;
+}
+.header-container ul li {
+    padding: 45px 30px 40px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+}
+.max-container {
+	margin: auto;
+	width: 1200px;
+	height: auto;
+}
+.service-container {
+	width: 100%;
+	height: 600px;
+	margin-top: 30px;
+}
+.service-container .subtitle {
+	color: #005BA4;
+	font-size: 18px;
+	font-weight: 600;
+}
+.service-container .title {
+	margin: 15px 0 40px 0;
+	color: #F3F3F3;
+	font-size: 36px;
+	font-weight: 900;
+}
+.service-container .item {
+	width: 580px;
+	height: 150px;
+	float: left;
+	margin: 0 0 20px 20px;
+	background-color: #131717;
+	border-radius: 3px;
+}
+.service-container object {
+	width: 61px;
+	margin: 0 30px 0 30px;
+	transform: translateY(30%);
+	filter: invert(20%) sepia(98%) saturate(2141%) hue-rotate(191deg) brightness(92%) contrast(103%);
+	padding: 14px;
+	float: left;
+}
+.service-container .box-l {
+	margin-left: 0;
+}
+.service-container .item .in-title {
+	color: #e0e0e0;
+	font-weight: 800;
+	font-size: 26px;
+	margin: 30px 0 15px 0;
+}
+.service-container .item span {
+	color: #9e9d9d;
+	font-size: 16px;
+}
+.service-container .item span a {
+	color: #9e9d9d;
+}
+.price-container {
+	margin-top: 200px;
+	width: 100%;
+	height: 1150px;
+	background-color: #081d2e;;
+}
+.price-container .title {
+	margin: 0 0 30px 0;
+	padding-top: 50px;
+	color: #F3F3F3;
+	font-size: 36px;
+	font-weight: 900;
+}
+.price-container .item {
+	width: 380px;
+	height: 480px;
+	margin: 0 20px 20px 0;
+	background-color: #dadada;
+	float: left;
+	border-radius: 3px;
+}
+.price-container .item .name {
+	margin: 30px 0 6px 37px;
+	padding: 0 0 0px 0;
+	font-size: 26px;
+	font-weight: 700;
+	width: 80%;
+}
+.price-container .item .price-info {
+	margin: auto;
+	padding-bottom: 10px;
+	font-size: 16px;
+	width: 80%;
+	border-bottom: 1.5px solid #000;
+}
+.price-container .item .price {
+	font-size: 21px;
+	font-weight: 600;
+	margin: 30px 5px 0 37px;
+}
+.price-container .item .price span {
+	font-size: 24px;
+}
+.price-container .item .cpu {
+	font-size: 18px;
+	margin: 50px 0 0 37px;
+	font-weight: 600;
+}
+.price-container .item .cpu span {
+	font-size: 19px;
+	font-weight: 700;
+}
+.price-container .item .memory {
+	font-size: 18px;
+	margin: 7px 0 0 37px;
+	font-weight: 600;
+}
+.price-container .item .memory span {
+	font-size: 19px;
+	font-weight: 700;
+}
+.price-container .item .disk {
+	font-size: 18px;
+	margin: 7px 0 0 37px;
+	font-weight: 600;
+}
+.price-container .item .disk span {
+	font-size: 19px;
+	font-weight: 700;
+}
+.price-container .item .uplink {
+	font-size: 18px;
+	margin: 7px 0 0 37px;
+	font-weight: 600;
+}
+.price-container .item .uplink span {
+	font-size: 19px;
+	font-weight: 700;
+}
+.price-container .item .bandwidth {
+	font-size: 18px;
+	margin: 7px 0 0 37px;
+	font-weight: 600;
+}
+.price-container .item .bandwidth span {
+	font-size: 19px;
+	font-weight: 700;
+}
+.price-container .item .btn {
+	margin: 60px auto;
+	width: 80%;
+	text-align: center;
+	font-size: 24px;
+	color: #F3F3F3;
+	font-weight: 700;
+	padding: 20px 0 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #005BA4;
+	border: 1px solid #005BA4;
+}
+.review-container {
+	width: 100%;
+	height: 680px;
+}
+.review-container .title {
+	margin: 0 0 30px 0;
+	padding-top: 50px;
+	color: #F3F3F3;
+	font-size: 36px;
+	font-weight: 900;
+}
+.review-container .item {
+	width: 580px;
+	height: 230px;
+	background-color: #dadada;
+	float: left;
+	border-radius: 3px;
+}
+.review-container .item img {
+	width: 80px;
+	border-radius: 50%;
+	float: left;
+	margin: 20px 20px 0 30px;
+}
+.review-container .item .star {
+	padding: 40px 30px 0 0;
+	float: right;
+}
+.review-container .item object {
+	width: 25px;
+	filter: invert(91%) sepia(7%) saturate(5000%) hue-rotate(337deg) brightness(90%) contrast(100%);
+}
+.review-container .item .name {
+	font-size: 21px;
+	font-weight: 700;
+	margin-top: 50px;
+	float: left;
+}
+.review-container .item .content {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 30px 0 0 0;
+	padding: 0 30px 0 30px;
+	float: left;
+}
+.copyright-container {
+	color: #737373;
+	font-size: 18px;
+	background-color: #081d2e;
+}
+.copyright-container h2 {
+	color: #f3f3f3;
+	font-size: 21px;
+	font-weight: 700;
+	margin: 20px 0 20px 0;
+}
+.copyright-container hr {
+	margin-top: 75px;
+	border-top-color: #bbb;
+	opacity: 0.5
+}
+.copyright-container .copyright {
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+.copyright-container .about {
+	float: left;
+	margin-bottom: 0px;
+	margin-right: 100px;
+}
+.copyright-container .list {
+	margin-top: 4px;
+}
