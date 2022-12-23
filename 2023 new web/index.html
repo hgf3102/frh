@@ -9,15 +9,27 @@
     <title>Document</title>
 </head>
 <body onload="widthSize()" onresize="widthSize()">
+    <div class="m-menu-full">
+        <div class="m-menu-close">
+            <img src="./imgs/cross.png" alt="">
+        </div>
+        <ul class="m-menu-list-warp">
+            <li><a href="" onclick="closeMenu()">이용약관</a></li>
+            <li><a href="https://stats.uptimerobot.com/Jj0vRHBrlk" onclick="closeMenu()">업타임</a></li>
+            <li><a href="#review" onclick="closeMenu()">구매후기</a></li>
+            <li><a href="#price" onclick="closeMenu()">가격표</a></li>
+            <li><a href="https://pf.kakao.com/_qcQxcK" onclick="closeMenu()">상담</a></li>
+        </ul>
+   </div>
     <section class="topbar" id="topbar">
         <div class="max-width">
             <div class="logo" id="logo">FirstHosting</div>
             <ul id="p-menu">
-                <li>이용약관</li>
-                <li>업타임</li>
-                <li>구매후기</li>
-                <li>가격표</li>
-                <li>상담</li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="https://stats.uptimerobot.com/Jj0vRHBrlk">업타임</a></li>
+                <li><a href="#review">구매후기</a></li>
+                <li><a href="#price">가격표</a></li>
+                <li><a href="https://pf.kakao.com/_qcQxcK">상담</a></li>
             </ul>
             <div class="m-menu">
                 <img src="./imgs/menu.png" alt="">
@@ -30,10 +42,10 @@
             <nav>디도스 방어</nav> 호스팅을 <br>
             저렴한 가격으로 사용해보세요
         </div>
-        <div class="btn"><a href="">상담하기</a></div>
+        <div class="btn"><a href="">문의하기</a></div>
     </section>
     <section class="max-width">
-        <section class="price-container">
+        <section class="price-container" id="price">
             <div class="title">FHD, FH 가격표</div>
             <div class="subtitle">20Gbps DDoS Protection Hosting</div>
             <div class="price-area">
@@ -124,13 +136,69 @@
             </div>
         </section>
     </section>
-    <section class="content">
+    <section class="content-container">
         <div class="max-width">
             <div class="title" id="content">빠른 문의를 하세요.</div>
             <div class="btn opt1"><a href="https://pf.kakao.com/_qcQxcK">카카오톡 문의</a></div>
             <div class="btn opt2"><a href="https://discord.gg/xygaTmT79p">디스코드 문의</a></div>
         </div>
     </section>
+    <div class="max-width" id="review">
+        <section class="review-container">
+            <div class="review-card">
+                <img src="./imgs/user.png" alt="" class="user">
+                <div class="name">user name</div>
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <div class="content">
+                    고객 리뷰 내용 <br>
+                    고객 리뷰 내용
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="./imgs/user.png" alt="" class="user">
+                <div class="name">user name</div>
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <div class="content">
+                    고객 리뷰 내용 <br>
+                    고객 리뷰 내용
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="./imgs/user.png" alt="" class="user">
+                <div class="name">user name</div>
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <div class="content">
+                    고객 리뷰 내용 <br>
+                    고객 리뷰 내용
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="./imgs/user.png" alt="" class="user">
+                <div class="name">user name</div>
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <img src="./imgs/star.png" alt="" class="star">
+                <div class="content">
+                    고객 리뷰 내용 <br>
+                    고객 리뷰 내용
+                </div>
+            </div>
+        </section>
+    </div>
     <section class="max-width">
         <div class="question-container">
             <div class="question">어떤 운영체제를 지원하나요?</div>
@@ -188,6 +256,25 @@
             } else {
             }
         }
+        
+        $(document).ready(function(){
+            $('.m-menu').on('click', function(){
+                $('.m-menu-full').fadeToggle(500);
+            });
+            $('.m-menu-close').on('click', function(){
+                $('.m-menu-full').fadeToggle(500); 
+            });
+        });
+
+        function closeMenu() {
+            $('.m-menu-full').fadeToggle(500); 
+        }
+
+        function moveScroll() {
+            var offset = $("#price").offset();
+            $("html, body").animate({scrollTop: offset.top},400); 
+        }
+
     </script>
 </body>
 </html>
