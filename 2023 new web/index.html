@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Document</title>
+</head>
+<body onload="widthSize()" onresize="widthSize()">
+    <section class="topbar" id="topbar">
+        <div class="max-width">
+            <div class="logo" id="logo">FirstHosting</div>
+            <ul id="p-menu">
+                <li>이용약관</li>
+                <li>업타임</li>
+                <li>구매후기</li>
+                <li>가격표</li>
+                <li>상담</li>
+            </ul>
+            <div class="m-menu">
+                <img src="./imgs/menu.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="title-area">
+            퍼스트 호스팅에서 <br>
+            <nav>디도스 방어</nav> 호스팅을 <br>
+            저렴한 가격으로 사용해보세요
+        </div>
+        <div class="btn"><a href="">상담하기</a></div>
+    </section>
+    <section class="max-width">
+        <section class="price-container">
+            <div class="title">FHD, FH 가격표</div>
+            <div class="subtitle">20Gbps DDoS Protection Hosting</div>
+            <div class="price-area">
+                <div class="price-card" id="card-1">
+                    <header>
+                        <div class="title">FHD - 1</div>
+                    </header>
+                    <hr>
+                    <div class="mo">4만원 <span>/ mo</span></div>
+                    <div class="option">5 Ram</div>
+                    <div class="option">1 rCore</div>
+                    <div class="option">50 GB SSD storage</div>
+                    <div class="option">25Mpbs bandwidth</div>
+                    <div class="btn"><a href="https://pf.kakao.com/_qcQxcK">구매하기</a></div>
+                </div>
+                <div class="price-card" id="card-2">
+                    <header>
+                        <div class="title">FHD - 2</div>
+                    </header>
+                    <hr>
+                    <div class="mo">8만원 <span>/ mo</span></div>
+                    <div class="option">10 Ram</div>
+                    <div class="option">2 rCore</div>
+                    <div class="option">100 GB SSD storage</div>
+                    <div class="option">50Mpbs bandwidth</div>
+                    <div class="btn"><a href="https://pf.kakao.com/_qcQxcK">구매하기</a></div>
+                </div>
+                <div class="price-card" id="card-3">
+                    <header>
+                        <div class="title">FHD - 3</div>
+                    </header>
+                    <hr>
+                    <div class="mo">12만원 <span>/ mo</span></div>
+                    <div class="option">15 Ram</div>
+                    <div class="option">3 rCore</div>
+                    <div class="option">150 GB SSD storage</div>
+                    <div class="option">80Mpbs bandwidth</div>
+                    <div class="btn"><a href="https://pf.kakao.com/_qcQxcK">구매하기</a></div>
+                </div>
+                <div class="price-card" id="card-4">
+                    <header>
+                        <div class="title">FHD - 4</div>
+                    </header>
+                    <hr>
+                    <div class="mo">20만원 <span>/ mo</span></div>
+                    <div class="option">20 Ram</div>
+                    <div class="option">4 rCore</div>
+                    <div class="option">200 GB SSD storage</div>
+                    <div class="option">100Mpbs bandwidth</div>
+                    <div class="btn"><a href="https://pf.kakao.com/_qcQxcK">구매하기</a></div>
+                </div>
+                <div class="price-card" id="card-5">
+                    <header>
+                        <div class="title">FH - 1</div>
+                    </header>
+                    <hr>
+                    <div class="mo">4만원 <span>/ mo</span></div>
+                    <div class="option">5 Ram</div>
+                    <div class="option">2 vCore</div>
+                    <div class="option">50 GB SSD storage</div>
+                    <div class="option">25Mpbs bandwidth</div>
+                    <div class="btn"><a href="https://pf.kakao.com/_qcQxcK">구매하기</a></div>
+                </div>
+                <div class="price-card" id="card-6">
+                    <header>
+                        <div class="title">FH - 2</div>
+                    </header>
+                    <hr>
+                    <div class="mo">6만원 <span>/ mo</span></div>
+                    <div class="option">8 Ram</div>
+                    <div class="option">3 vCore</div>
+                    <div class="option">80 GB SSD storage</div>
+                    <div class="option">40Mpbs bandwidth</div>
+                    <div class="btn"><a href="https://pf.kakao.com/_qcQxcK">구매하기</a></div>
+                </div>
+                <div class="price-card" id="card-7">
+                    <header>
+                        <div class="title">FH - 3</div>
+                    </header>
+                    <hr>
+                    <div class="mo">8만원 <span>/ mo</span></div>
+                    <div class="option">10 Ram</div>
+                    <div class="option">3 vCore</div>
+                    <div class="option">80 GB SSD storage</div>
+                    <div class="option">40Mpbs bandwidth</div>
+                    <div class="btn"><a href="https://pf.kakao.com/_qcQxcK">구매하기</a></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="content">
+        <div class="max-width">
+            <div class="title" id="content">빠른 문의를 하세요.</div>
+            <div class="btn opt1"><a href="https://pf.kakao.com/_qcQxcK">카카오톡 문의</a></div>
+            <div class="btn opt2"><a href="https://discord.gg/xygaTmT79p">디스코드 문의</a></div>
+        </div>
+    </section>
+    <section class="max-width">
+        <div class="question-container">
+            <div class="question">어떤 운영체제를 지원하나요?</div>
+            <div class="answer">
+                Window 2016 server, ubuntu, centos, debian 같은 원하시는 운영체제를 제공 합니다.
+            </div>
+            <div class="question">어떤 아이피와 포트를 제공하나요?</div>
+            <div class="answer">
+                기본 공인IP를 제공하며, 윈도우 방화벽만 해제하시면 모든 포트를 사용할 수 있습니다.
+            </div>
+            <div class="question">호스팅 환불이 가능한가요?</div>
+            <div class="answer">
+                호스팅 서비스 특성상 구매하신 이후 호스팅 환불에 대해선 까다롭게 진행되고 있습니다. <br>
+                기본적으로 환불을 도와드리고 있으나 일부 사용료를 제외한 가격으로 환불이 진행됩니다.
+            </div>
+        </div>
+    </section>
+    <section class="copyright-container">
+        <div class="max-width">
+            <div class="title">FirstHosting</div>
+            <div class="sub-title">사업자 번호 : 246-13-01852</div>
+            <div class="sub-title">admin@createweb.com</div>
+            <div class="copy">© 2022 Firsthosting. All rights reserved.</div>
+        </div>
+    </section>
+    <script>
+        $(".question").click(function() {
+            $(this).next(".answer").stop().slideToggle(500);
+            $(this).next(".answer").siblings(".answer").slideUp(450);
+            $(this).toggleClass('on').siblings().removeClass('on');
+        });
+
+        $(window).scroll(function() {
+            $("#topbar").css("background-color","#fff");
+            $('#topbar').css("border-bottom","0.6px solid #000");
+            if(scrollTop() == true){
+                $("#topbar").css("background-color","#EBF1FD");    
+                $('#topbar').css("border-bottom","0");
+            }
+        });
+        
+        function scrollTop() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function widthSize() {
+            if(window.innerWidth < 1288){
+            } else if(window.innerWidth < 987){
+            } else if(window.innerWidth < 659){
+            } else {
+            }
+        }
+    </script>
+</body>
+</html>
