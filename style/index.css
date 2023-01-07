@@ -2,7 +2,8 @@
 
 html {
     scroll-behavior:smooth;
-    overflow-x: hidden
+    overflow-x: hidden;
+    font-family: 'Nanum Gothic', sans-serif; 
 }
 
 .topbar {
@@ -356,11 +357,21 @@ html {
     line-height: 39px;
     margin: 0 0 5px 0;
 }
+
 .copyright-container > .max-width > .sub-title {
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
     margin: 0 0 1px 0;
+}
+
+.copyright-container a {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0 0 1px 0;
+    text-decoration: none;
+    color: #fff;
 }
 
 .copyright-container > .max-width > .copy {
