@@ -102,15 +102,23 @@ html {
     color: #1f4df4;
 }
 
+.main-container > .subtitle {
+    position: relative;
+    font-size: 21px;
+    font-weight: 400;
+    top: 41.9%;
+    transform: translateY(-41.9%);
+}
+
 .main-container > .btn {
     position: relative;
     display: inline-block;
-    top: 45%;
-    transform: translateY(-45%);
+    top: 46%;
+    transform: translateY(-46%);
     width: 170px;
     height: 44px;
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 3px;
     background-color: #2D5BFF;
     line-height: 44px;
     font-size: 18px;
@@ -267,6 +275,7 @@ html {
     width: 100%;
     height: auto;
     text-align: center;
+    margin-top: 60px;
 }
 
 .review-container > .review-card {
@@ -315,9 +324,6 @@ html {
 .question-container {
     margin-top: 100px;
     margin-left: 15px;
-}
-
-.question-container {
     width: 95%;
 }
 
@@ -382,6 +388,48 @@ html {
     color: #C1BFBF;
 }
 
+.pro-container {
+    margin-top: 60px;
+}
+
+.pro-container > .max-width > .card {
+    width: calc((1400px - 333px)/5);
+    height: 350px;
+    border: solid 0.6px #000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    border-radius: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.pro-container > .max-width > .card:nth-child(5) {
+    margin-right: 0;
+}
+
+.pro-container > .max-width > .card > header > img {
+    width: 53px;
+    margin-top: 40px;
+}
+
+.pro-container > .max-width > .card > header > .title {
+    font-size: 21px;
+    font-weight: 500;
+    color: #131d42;
+    margin-top: 10px;
+}
+
+.pro-container > .max-width > .card > .content {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3b3b3b;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
 @media (max-width: 1278px) {
     .price-container > .price-area > .price-card:nth-child(n+3):nth-child(-n+4) {
         margin-top: 13px;
@@ -398,7 +446,6 @@ html {
         display: none;
     }
 
-
     .topbar > .max-width > .m-menu > img {
         display: inline-block;
     }
@@ -413,15 +460,52 @@ html {
     }
 
     .review-container > .review-card {
-        width: 85%;
-        margin-left: 15px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 0;
+        padding-right: 10px;
     }
 
-    .review-container > .review-card:nth-child(3) {
-        margin-left: 15px;
+    .review-container > .review-card > .content {
+        padding-right: 50px;
+    }
+    
+    .content-container > .max-width > .title {
+        font-size: 16px;
     }
 
-    .review-container > .review-card:nth-child(4) {
-        margin-right: 15px;
+    .content-container > .max-width > .btn {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
     }
+
+    .price-container > .price-area > .price-card {
+        width: 100%;
+        margin-left: 0;
+    }
+    .price-container > .price-area > .price-card:nth-child(4) { 
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .question-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .question-container > .question {
+        padding-left: 10px;
+    }
+
+    .question-container > .answer {
+        padding-left: 10px;
+    }
+
+    .pro-container > .max-width > .card {
+        width: 100%;
+        margin-top: 15px;
+    }
+
 }
