@@ -106,8 +106,8 @@ html {
     position: relative;
     font-size: 21px;
     font-weight: 400;
-    top: 41.9%;
-    transform: translateY(-41.9%);
+    top: 42.9%;
+    transform: translateY(-42.9%);
 }
 
 .main-container > .btn {
@@ -371,6 +371,14 @@ html {
     margin: 0 0 1px 0;
 }
 
+.copyright-container > .max-width > .sub-title1 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0 0 1px 0;
+    text-align: right;
+}
+
 .copyright-container a {
     font-weight: 400;
     font-size: 13px;
@@ -411,18 +419,21 @@ html {
 .pro-container > .max-width > .card > header > img {
     width: 53px;
     margin-top: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .pro-container > .max-width > .card > header > .title {
-    font-size: 21px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 700;
     color: #000;
     margin-top: 10px;
 }
 
 .pro-container > .max-width > .card > .content {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
     color: #000;
     letter-spacing: 0.8px;
     line-height: 20px;
