@@ -393,9 +393,9 @@ html {
 }
 
 .pro-container > .max-width > .card {
-    width: calc((1400px - 333px)/5);
+    width: calc((1400px - 340px)/5);
     height: 350px;
-    border: solid 0.6px #000;
+    border: solid 1px #000;
     display: inline-block;
     vertical-align: middle;
     margin-right: 15px;
@@ -416,14 +416,14 @@ html {
 .pro-container > .max-width > .card > header > .title {
     font-size: 21px;
     font-weight: 500;
-    color: #131d42;
+    color: #000;
     margin-top: 10px;
 }
 
 .pro-container > .max-width > .card > .content {
     font-size: 18px;
     font-weight: 400;
-    color: #3b3b3b;
+    color: #000;
     letter-spacing: 0.8px;
     line-height: 20px;
     font-weight: 400;
