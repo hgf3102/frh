@@ -1,43 +1,50 @@
 @import url('reset.css');
 
+:root {
+    --headerColor: #fff;
+    --boldBlack: #343f52;
+    --lightBlack: #60697b;
+}
+
+
 html {
     scroll-behavior:smooth;
     overflow-x: hidden;
-    font-family: 'Nanum Gothic', sans-serif; 
+    font-family: 'NanumSquare', sans-serif;
+    background-color: #fefefe;
 }
-
+.max-width {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 .topbar {
+    position: absolute;
     width: 100%;
     height: 60px;
-    position: fixed;
-    background-color: #EBF1FD;
+    background-color: rgba(0, 0, 0, 0);
     z-index: 10;
     transition: background-color 0.3s;
 }
-
 .topbar > .max-width > .logo {
-    font-size: 21px;
+    font-size: 1.3em;
     font-weight: 700;
     padding-top: 20px;
     margin-left: 15px;
     float: left;
+    color: var(--headerColor);
 }
-
 .topbar > .max-width > ul {
     float: right;
     padding-top: 23px;
 }
-
 .topbar > .max-width > ul > li {
     float: left;
     margin-right: 40px;
 }
-
 .topbar > .max-width > ul > li > a {
-    color: #000;
+    color: var(--headerColor);
     text-decoration: none;
 }
-
 .topbar > .max-width > .m-menu > img {
     width: 30px;
     float: right;
@@ -45,71 +52,60 @@ html {
     padding-right: 15px;
     display: none;
 }
-
 .m-menu-full {
     display: none;
     z-index: 999;
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #3883FF;
+    background: rgba(0, 0, 0, 1);
 }
-
 .m-menu-full .m-menu-close img {
     width: 24px;
     float: right;
     padding-top: 15px;
     padding-right: 15px;
 }
-
 .m-menu-list-warp {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
 .m-menu-list-warp li {
     padding: 10px;
     list-style: none;
-    font-size: 21px;
+    font-size: 1.3em;
     font-weight: 700;
 }
-
 .m-menu-list-warp a {
-    color: #fff;
+    color: #2656a6;
     text-decoration: none;
 }
-
 .main-container {
     width: 100%;
     height: 600px;
-    background-color: #EBF1FD;
+    margin-bottom: 60px;
+    background-image: url('../imgs/bg1.png');
+    background-position: center;
+    background-repeat: cover;
+    background-size: cover;
     text-align: center;
+    color: var(--headerColor);
 }
-
 .main-container > .title-area {
     position: relative;
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 2em;
+    line-height: 117%;
+    font-weight: bold;
     top: 45%;
     transform: translateY(-45%);
 }
-
 .main-container > .title-area > nav {
     display: inline-block;
     font-weight: 700;
-    color: #1f4df4;
+    color: #09de54;
 }
-
-.main-container > .subtitle {
-    position: relative;
-    font-size: 21px;
-    font-weight: 400;
-    top: 42.9%;
-    transform: translateY(-42.9%);
-}
-
 .main-container > .btn {
     position: relative;
     display: inline-block;
@@ -119,109 +115,24 @@ html {
     height: 44px;
     cursor: pointer;
     border-radius: 3px;
-    background-color: #2D5BFF;
+    background-color: var(--headerColor);
     line-height: 44px;
-    font-size: 18px;
+    font-size: 1em;
+    font-weight: bolder;
 }
-
 .main-container > .btn > a {
     text-decoration: none;
-    color: #fff;
+    color: #131d42;
+    font-weight: bo;
 }
-
 .price-container {
     margin-top: 60px;
     text-align: center;
 }
-
 .price-container > .title {
     font-size: 28px;
     font-weight: 600;
 }
-
-.max-width {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.price-container > .price-area {
-    margin-top: 40px;
-}
-
-.price-container > .price-area > .price-card {
-    display: inline-block;
-    width: calc((1400px - 13px * (4)) / 5);
-    height: 360px;
-    border: 0.6px solid #000;
-    border-radius: 5px;
-    margin-right: 13px;
-    margin-left: 13px;
-    border: #000 solid 0.6px;
-    text-align: left;
-}
-
-.price-container > .price-area > .price-card:nth-child(4) { 
-    margin-right: 13px;
-    margin-left: 13px;
-}
-
-.price-container > .price-area > .price-card:nth-child(n+5):nth-child(-n+7) {
-    margin-top: 13px;
-}
-
-.price-container > .price-area > .price-card > header > .title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    margin: 30px 0 20px 30px;
-    color: #212121;
-}
-
-.price-container > .price-area > .price-card > hr {
-    width: 76%;
-}
-
-.price-container > .price-area > .price-card > .mo {
-    font-weight: 600;
-    font-size: 21px;
-    margin: 30px 0 50px 30px;
-}
-
-.price-container > .price-area > .price-card > .mo > span {
-    font-size: 14px;
-}
-
-.price-container > .price-area > .price-card > .option {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #212121;
-    margin: 0 0 1px 30px;
-}
-
-.price-container > .price-area > .price-card > .btn {
-    width: 77%;
-    height: 41px;
-    cursor: pointer;
-    background: #3883FF;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 41px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 30px 0 0 0;
-    transition: all 0.2s
-}
-
-.price-container > .price-area > .price-card > .btn > a{
-    color: #fff;
-    text-decoration: none;
-}
-
 .content-container {
     margin: 100px 0 120px 0;
     padding: 50px 0 0 15px;
@@ -229,14 +140,12 @@ html {
     height: 180px;
     background-color: #131d42;
 }
-
 .content-container > .max-width > .title {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    color: #fff;
+    color: var(--headerColor);
 }
-
 .content-container > .max-width > .btn {
     cursor: pointer;
     margin: 20px 0 0 0;
@@ -250,83 +159,77 @@ html {
     text-align: center;
     transition: all 0.2s
 }
-
 .content-container > .max-width > .opt1 {
     background-color: #3883FF;
 }
-
 .content-container > .max-width > .opt1 > a {
     text-decoration: none;
-    color: #fff;
+    color: var(--headerColor);
 }
-
 .content-container > .max-width > .opt2 > a {
     color: #000;
     text-decoration: none;
 }
-
 .content-container > .max-width > .opt2 {
     color: #000;
     margin: 20px 0 0 20px;
-    background-color: #fff;
+    background-color: var(--headerColor);
 }
-
 .review-container {
     width: 100%;
     height: auto;
     text-align: center;
     margin-top: 60px;
 }
-
 .review-container > .review-card {
-    width: calc((1400px - 298px) / 3);
+    width: 1340px;
     display: inline-block;
     margin-right: 15px;
-    margin-top: 15px;
+    margin-top: 35px;
     height: 200px;
-    background-color: #EBF1FD;
-    border-radius: 15px;
-    padding: 30px;
+    background-color: var(--headerColor);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 24px;
+    padding: 30px 30px 30px 0;
     text-align: left;
     vertical-align: middle;
 }
-
-.review-container > .review-card:nth-child(4) {
-    margin-right: 0;
-}
-
-.review-container > .review-card > .user {
-    width: 45px;
+.review-card .inInfo {
+    width: 300px;
+    height: 100%;
     float: left;
-    background-color: #212121;
-    padding: 10px;
-    border-radius: 50%;
-    margin-right: 20px;
+    text-align: center;
+    border-right: solid 0.6px #000;
 }
-
-.review-container > .review-card > .name {
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
+.review-card .score {
+    position: relative;
+    top: 26px;
+    font-size: 2.4em;
+    font-weight: bolder;
 }
-
-.review-container > .review-card > .star {
-    width: 18px;
+.review-card .fa-solid {
+    margin-top: 33px;
+    color: #fbad23;
+    font-size: 1.3em;
 }
-
+.review-card .pName {
+    margin-top: 10px;
+    color: var(--boldBlack);
+    font-size: 1em;
+}
 .review-container > .review-card > .content {
-    margin-top: 40px;
     font-size: 16px;
     color: #131d42;
     line-height: 22px;
+    margin-left: 330px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
 }
-
 .question-container {
     margin-top: 100px;
     margin-left: 15px;
     width: 95%;
 }
-
 .question-container > .question {
     padding: 25px 0;
     cursor: pointer;
@@ -334,11 +237,9 @@ html {
     font-weight: 600;
     border-bottom: 0.6px solid #000;
 }
-
 .question-container > .question.on {
     border-bottom: 0;
 }
-
 .question-container > .answer {
     display: none;
     font-size: 18px;
@@ -347,30 +248,26 @@ html {
     border-bottom: 0.6px solid #000;
     line-height: 22px;
 }
-
 .copyright-container {
     padding: 35px 0 0 15px;
     margin-top: 100px;
     width: 100%;
     height: 220px;
-    color: #fff;
+    color: var(--headerColor);
     background-color: #353535;
 }
-
 .copyright-container > .max-width > .title {
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
     margin: 0 0 5px 0;
 }
-
 .copyright-container > .max-width > .sub-title {
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
     margin: 0 0 1px 0;
 }
-
 .copyright-container > .max-width > .sub-title1 {
     font-weight: 400;
     font-size: 13px;
@@ -378,16 +275,14 @@ html {
     margin: 0 0 1px 0;
     text-align: right;
 }
-
 .copyright-container a {
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
     margin: 0 0 1px 0;
     text-decoration: none;
-    color: #fff;
+    color: var(--headerColor);
 }
-
 .copyright-container > .max-width > .copy {
     margin: 52px 0 0 0;
     font-weight: 500;
@@ -395,57 +290,56 @@ html {
     line-height: 15px;
     color: #C1BFBF;
 }
-
 .pro-container {
-    margin-top: 60px;
+    display: block;
+    text-align: center;
 }
-
 .pro-container > .max-width > .card {
-    width: calc((1400px - 340px)/5);
-    height: 350px;
-    border: solid 1px #000;
+    width: 330px;
+    height: 320px;
+    background-color: var(--headerColor);
     display: inline-block;
     vertical-align: middle;
-    margin-right: 15px;
-    border-radius: 7px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-right: 35px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 24px;
 }
-
-.pro-container > .max-width > .card:nth-child(5) {
+.pro-container .fa-solid {
+    color: #4c74b9;
+    font-size: 50px;
+    margin-top: 41px;
+    margin-bottom: 18px;
+}
+.pro-container .price-card:nth-child(3) {
     margin-right: 0;
 }
-
-.pro-container > .max-width > .card > header > img {
-    width: 53px;
-    margin-top: 40px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.pro-container > .max-width > .card:nth-child(4){
+    margin-top: 35px;
 }
-
+.pro-container .card:nth-child(5) {
+    margin-top: 35px;
+    margin-right: 0;
+}
 .pro-container > .max-width > .card > header > .title {
     font-size: 24px;
     font-weight: 700;
-    color: #000;
+    color: var(--boldBlack);
     margin-top: 10px;
+    margin-bottom: 10px;
 }
-
 .pro-container > .max-width > .card > .content {
     font-size: 20px;
     font-weight: 500;
-    color: #000;
+    color: var(--lightBlack);
     letter-spacing: 0.8px;
     line-height: 20px;
     font-weight: 400;
-    margin-top: 20px;
 }
-
 @media (max-width: 1278px) {
     .price-container > .price-area > .price-card:nth-child(n+3):nth-child(-n+4) {
         margin-top: 13px;
     }
-
 }
 @media (max-width: 1060px) {
     .review-container > .review-card:nth-child(3) {
@@ -456,20 +350,16 @@ html {
     .topbar > .max-width > ul {
         display: none;
     }
-
     .topbar > .max-width > .m-menu > img {
         display: inline-block;
     }
-
     .price-container > .price-area > .price-card {
         width: 90%;
         margin-top: 13px;
     }
-
     .price-container > .price-area > .price-card > hr {
         width: 90%;
     }
-
     .review-container > .review-card {
         width: 100%;
         margin-left: 0px;
@@ -477,21 +367,14 @@ html {
         border-radius: 0;
         padding-right: 10px;
     }
-
-    .review-container > .review-card > .content {
-        padding-right: 50px;
-    }
-    
     .content-container > .max-width > .title {
         font-size: 16px;
     }
-
     .content-container > .max-width > .btn {
         width: 100px;
         height: 40px;
         font-size: 14px;
     }
-
     .price-container > .price-area > .price-card {
         width: 100%;
         margin-left: 0;
@@ -500,23 +383,18 @@ html {
         margin-right: 0;
         margin-left: 0;
     }
-
     .question-container {
         width: 100%;
         margin-left: 0;
     }
-
     .question-container > .question {
         padding-left: 10px;
     }
-
     .question-container > .answer {
         padding-left: 10px;
     }
-
     .pro-container > .max-width > .card {
         width: 100%;
         margin-top: 15px;
     }
-
 }
