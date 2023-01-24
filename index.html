@@ -4,60 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
-    <meta name="keywords" content="호스팅, 게임호스팅, 디도스방어, 마인크래프트호스팅, 마인크래프트 호스팅, 파이브엠, 파이브엠 호스팅, 디도스 방어, 자체 디도스 방어, 디도스방어 호스팅, 가성비 호스팅">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://frh.kr">
-    <meta property="og:title" content="퍼스트호스팅 - 디도스 방어 호스팅">
-    <meta property="og:image" content="https://frh.kr/imgs/page.png">
-    <meta property="og:description" content="UPtime 99% 한국리전 디도스 방어 IDC를 제공합니다..">
-    <meta property="og:site_name" content="First Hosting">
-    <meta property="og:image:height" content="630">
-    <link rel="shortcut icon" href="imgs/favicon.ico">
-    <link rel="icon" href="imgs/favicon.png">
-    <link rel="stylesheet" href="./style/index.css">
-    <title>FirstHosting</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>FirstHosting | 2023 web</title>
 </head>
-<body onload="widthSize()" onresize="widthSize()">
-    <div class="m-menu-full">
-        <div class="m-menu-close">
-            <img src="./imgs/cross.png" alt="">
-        </div>
-        <ul class="m-menu-list-warp">
-            <li><a href="tos.html" onclick="closeMenu()">이용약관</a></li>
-            <li><a href="https://stats.uptimerobot.com/Jj0vRHBrlk" onclick="closeMenu()">업타임</a></li>
-            <li><a href="#review" onclick="closeMenu()">구매후기</a></li>
-            <li><a href="#price" onclick="closeMenu()">가격표</a></li>
-            <li><a href="https://pf.kakao.com/_qcQxcK" onclick="closeMenu()">상담</a></li>
-        </ul>
-   </div>
-    <section class="topbar" id="topbar">
-        <div class="max-width">
-            <div class="logo" id="logo">FirstHosting</div>
-            <ul id="p-menu">
-                <li><a href="tos.html">이용약관</a></li>
-                <li><a href="https://stats.uptimerobot.com/Jj0vRHBrlk">업타임</a></li>
-                <li><a href="#review">구매후기</a></li>
-                <li><a href="#price">가격표</a></li>
-                <li><a href="https://pf.kakao.com/_qcQxcK">상담</a></li>
-            </ul>
-            <div class="m-menu">
-                <img src="./imgs/menu.png" alt="">
+<body>
+    <header class="head">
+        <nav class="mobileNav">
+            <div class="mMenuClose">
+                <i class="fa-solid fa-xmark"></i>
             </div>
+            <ul class="mListWarp">
+                <li><a href="tos.html" onclick="closeMenu()">이용약관</a></li>
+                <li><a href="https://stats.uptimerobot.com/Jj0vRHBrlk" onclick="closeMenu()">업타임</a></li>
+                <li><a href="#review" onclick="closeMenu()">구매후기</a></li>
+                <li><a href="#price" onclick="closeMenu()">가격표</a></li>
+                <li><a href="https://pf.kakao.com/_qcQxcK" onclick="closeMenu()">상담</a></li>
+            </ul>
+        </nav>
+        <nav class="pcNav" id="topBar">
+            <div class="maxWidth">
+                <div class="logo" id="logo">FirstHosting</div>
+                <ul id="pMenu">
+                    <li><a href="tos.html">이용약관</a></li>
+                    <li><a href="https://stats.uptimerobot.com/Jj0vRHBrlk">업타임</a></li>
+                    <li><a href="#review">구매후기</a></li>
+                    <li><a href="#price">가격표</a></li>
+                    <li><a href="https://pf.kakao.com/_qcQxcK">상담</a></li>
+                </ul>
+                <div class="mMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="titleWarp">
+            합리적인 가격에 고성능 서버를 상담받아보세요.
         </div>
-    </section>
-    <section class="main-container">
-        <div class="title-area">
-            국내 탑급 인터넷 데이터 센터를 이용하여<br>
-            고객분들에게 기업용 네트워크 인프라를 제공합니다.
+        <div class="sub">
+            국내 탑급 Kinx IDC를 이용하여 안정적인 서비스를 제공합니다.
         </div>
-        <div class="btn"><a href="">문의하기</a></div>
-    </section>
-    <section class="pro-container">
-        <div class="max-width">
+        <a href="https://pf.kakao.com/_qcQxcK" class="qBtn">문의하기</a>
+    </header>
+    <section class="proContainer">
+        <div class="maxWidth">
             <div class="card">
                 <header>
                     <i class="fa-solid fa-shield"></i>
@@ -70,7 +61,7 @@
             <div class="card">
                 <header>
                     <i class="fa-solid fa-earth-americas"></i>
-                    <div class="title">글로벌 유연성</div>
+                    <div class="title">글로벌 호스팅</div>
                 </header>
                 <div class="content">
                     한국뿐만 아니라 일본, 미국, 영국 등 세계 여러 나라에서 서비스 제공이 가능합니다.
@@ -105,9 +96,9 @@
             </div>
         </div>
     </section>
-    <div class="max-width" id="review">
-        <section class="review-container">
-            <div class="review-card">
+    <div class="maxWidth" id="review">
+        <section class="reviewContainer">
+            <div class="reviewCard">
                 <div class="inInfo">
                     <div class="score">5</div>
                     <i class="fa-solid fa-star"></i>
@@ -120,7 +111,7 @@
                 <div class="content">아는 분에 추천으로 인하여 이 호스팅을 구매하게 되었습니다. 사장님이 답장도 빠르게 해주시고 호스팅 관련 오류가 있으면 엄청 빠르고 친절하게 처리해 줍니다. 호스팅에 대해 자세한 설명도 해주시고 언제든 문제 있으면 문의하라고 친절하게 말씀해 주시고 가성비도 좋네요. 꼭 구매하세요! 후회 안 합니다.
                 </div>
             </div>
-            <div class="review-card">
+            <div class="reviewCard">
                 <div class="inInfo">
                     <div class="score">5</div>
                     <i class="fa-solid fa-star"></i>
@@ -131,10 +122,10 @@
                     <div class="pName">FH 요금제</div>
                 </div>
                 <div class="content">
-                    친절하시고 답변도 빠르게 확인해주시고 처음 호스팅 사는건데 친절하게 다 설명해주셔서 좋습니다.
+                    친절하시고 답변도 빠르게 확인해주시고 처음 호스팅 사는건데 친절하게 다 설명해주셔서 좋습니다. <br><br><br><br><br>
                 </div>
             </div>
-            <div class="review-card">
+            <div class="reviewCard">
                 <div class="inInfo">
                     <span class="score">5</span><br>
                     <i class="fa-solid fa-star"></i>
@@ -145,101 +136,49 @@
                     <div class="pName">FH 요금제</div>
                 </div>
                 <div class="content">
-                    판매 하시는분 답변도 빠르시고 문제점 해결도 잘 해주시고 호스팅도 문제 없게 잘 돌아갑니다 가격도 저렴하고 사장님도 너무 착하신거 같습니다 호스팅 너무 마음에 듭니다 감사합니다 잘 이용하도록 하겠습니다.!! 
+                    판매 하시는분 답변도 빠르시고 문제점 해결도 잘 해주시고 호스팅도 문제 없게 잘 돌아갑니다 가격도 저렴하고 사장님도 너무 착하신거 같습니다 호스팅 너무 마음에 듭니다 감사합니다 잘 이용하도록 하겠습니다!! <br><br><br>
                 </div>
             </div>
         </section>
     </div>
-    <section class="max-width">
-        <div class="question-container">
-            <div class="question">어떤 운영체제를 지원하나요?</div>
+    <section class="maxWidth">
+        <div class="questionContainer">
+            <div class="question">어떤 운영체제를 지원하나요?<i class="fa-solid fa-angle-up" id="close"></i> <i class="fa-solid fa-chevron-down" id="open"></i></div>
             <div class="answer">
                 window server 2019을 기본 제공합니다. 기본 제공되는 운영체제 외에 window server 2019, centos, ubuntu, debian도 지원합니다.
             </div>
-            <div class="question">어떤 아이피와 포트를 제공하나요?</div>
+            <div class="question">어떤 아이피와 포트를 제공하나요?<i class="fa-solid fa-angle-up" id="close"></i> <i class="fa-solid fa-chevron-down" id="open"></i></div>
             <div class="answer">
                 FH는 공인 IP를 기본 제공합니다. FN부터는 공유 IP 포트 2개를 제공합니다.
             </div>
-            <div class="question">호스팅 환불이 가능한가요?</div>
+            <div class="question">호스팅 환불이 가능한가요?<i class="fa-solid fa-angle-up" id="close"></i> <i class="fa-solid fa-chevron-down" id="open"></i></div>
             <div class="answer">
                 호스팅 서비스 특성상 세팅 비용, 트래픽 비용, 회선 비용 등<br>
                 요금제 및 상황에 따라 상이하나 기본적으로 단순 변심 환불은 불가능하며 그 이외에는 담당자와의 합의로 환불이 가능합니다.
             </div>
-            <div class="question">디도스 방어량이 어떻게 되나요?</div>
+            <div class="question">디도스 방어량이 어떻게 되나요?<i class="fa-solid fa-angle-up" id="close"></i> <i class="fa-solid fa-chevron-down" id="open"></i></div>
             <div class="answer">
                 CloudFlare Proxy DDOS 방어존은 디도스 방어 100Gbps를 지원합니다.
             </div>
         </div>
     </section>
-    <section class="content-container">
-        <div class="max-width">
-            <div class="title" id="content">고객센터 문의하기 / 365일 24시간 고객님이 필요하실 때 상담을 지원합니다.</div>
+    <section class="contentContainer">
+        <div class="maxWidth">
+            <div class="title" id="content">고객센터 문의하기 365일 24시간 고객님이 필요하실 때 상담을 지원합니다.</div>
             <div class="btn opt1"><a href="https://pf.kakao.com/_qcQxcK">카카오톡 문의</a></div>
             <div class="btn opt2"><a href="https://discord.gg/xygaTmT79p">디스코드 문의</a></div>
         </div>
     </section>
-    <section class="copyright-container">
-        <div class="max-width">
+    <section class="copyrightContainer">
+        <div class="maxWidth">
             <div class="title">FirstHosting</div>
-            <div class="sub-title1"><a href="tos.html">이용약관</a> | <a href="https://stats.uptimerobot.com/Jj0vRHBrlk">네트워크</a> | <a href="https://discord.gg/WhZ4sDmeuZ">커뮤니티</a> | <a href="https://pf.kakao.com/_qcQxcK">고객센터</a></div>
-            <div class="sub-title">사업자 번호 : 246-13-01852</div>
-            <div class="sub-title">대표 : 한관웅</div>
+            <div class="subTitle1"><a href="tos.html">이용약관</a> | <a href="https://stats.uptimerobot.com/Jj0vRHBrlk">네트워크</a> | <a href="https://discord.gg/WhZ4sDmeuZ">커뮤니티</a> | <a href="https://pf.kakao.com/_qcQxcK">고객센터</a></div>
+            <div class="subTitle">사업자 번호 : 246-13-01852</div>
+            <div class="subTitle">대표 : 한관웅</div>
             <div class="copy">© 2022 Firsthosting. All rights reserved.</div>
         </div>
     </section>
-    <script>
-        $(".question").click(function() {
-            $(this).next(".answer").stop().slideToggle(500);
-            $(this).next(".answer").siblings(".answer").slideUp(450);
-            $(this).toggleClass('on').siblings().removeClass('on');
-        });
-
-        $(window).scroll(function() {
-            $("#topbar").css("background-color","#2656a6");
-            $("#topbar").css("position","fixed");
-            //$('#topbar').css("border-bottom","0.6px solid #000");
-            if(scrollTop() == true){
-                $("#topbar").css("background-color","rgba(0, 0, 0, 0)");    
-                $('#topbar').css("border-bottom","0");
-                $("#topbar").css("position","absolute");
-            }
-        });
-        
-        function scrollTop() {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop == 0) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-
-        function widthSize() {
-            if(window.innerWidth < 1288){
-            } else if(window.innerWidth < 987){
-            } else if(window.innerWidth < 659){
-            } else {
-            }
-        }
-        
-        $(document).ready(function(){
-            $('.m-menu').on('click', function(){
-                $('.m-menu-full').fadeToggle(500);
-            });
-            $('.m-menu-close').on('click', function(){
-                $('.m-menu-full').fadeToggle(500); 
-            });
-        });
-
-        function closeMenu() {
-            $('.m-menu-full').fadeToggle(500); 
-        }
-
-        function moveScroll() {
-            var offset = $("#price").offset();
-            $("html, body").animate({scrollTop: offset.top},400); 
-        }
-
-    </script>
+    <script src="./script/navBar.js"></script>
+    <script src="./script/question.js"></script>
 </body>
 </html>
