@@ -80,23 +80,23 @@ html {
     padding-top: 20px;
     padding-right: 17.5px;
 }
-.mListWarp {
+.mListWrap {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.mListWarp li {
+.mListWrap li {
     padding: 17.5px;
     list-style: none;
     font-size: 1.3em;
     font-weight: bolder;
 }
-.mListWarp a {
+.mListWrap a {
     color: var(--headerColor);
     text-decoration: none;
 }
-.head .titleWarp {
+.head .titleWrap {
     position: relative;
     font-size: 2em;
     line-height: 117%;
@@ -382,7 +382,7 @@ html {
     }
 }
 @media (max-width: 600px) {
-    .head .titleWarp {
+    .head .titleWrap {
         font-size: 1.6em;
     }
     .head .sub {
