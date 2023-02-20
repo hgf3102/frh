@@ -1,0 +1,23 @@
+table {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1em;
+    text-align: center;
+}
+table td {
+    padding: 13px 10px;
+}
+table thead {
+    font-weight: bold;
+    background-color: #343f52;
+    color: #fff;
+}
+
+table tbody td {
+    padding: 10px;
+    background-color: #eee;
+}
+table tr td:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}

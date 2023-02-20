@@ -1,0 +1,436 @@
+@import url('reset.css');
+
+:root {
+    --headerColor: #fff;
+    --boldBlack: #343f52;
+    --lightBlack: #60697b;
+    --pointBlue: #2656a6;
+}
+
+html {
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fefefe;
+}
+.maxWidth {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.head {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 25px;
+    background-image: url('../imgs/bg1.png');
+    background-position: center;
+    background-repeat: cover;
+    background-size: cover;
+    text-align: center;
+    color: var(--headerColor);
+}
+.pcNav {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+    transition: background-color .5s linear;
+}
+.pcNav .logo {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-left: 17.5px;
+    float: left;
+    color: var(--headerColor);
+}
+.pcNav .maxWidth ul {
+    float: right;
+    padding-top: 23px;
+}
+.pcNav .maxWidth ul li {
+    float: left;
+    margin-right: 18px;
+}
+.pcNav .maxWidth ul li:last-child {
+    margin-right: 20px;
+}
+.pcNav .maxWidth ul li a {
+    color: var(--headerColor);
+    text-decoration: none;
+}
+.pcNav .mMenu i {
+    font-size: 1.5em;
+    float: right;
+    padding-top: 20px;
+    padding-right: 17.5px;
+    display: none;
+}
+.mobileNav {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--pointBlue);
+}
+.mobileNav .mMenuClose i {
+    font-size: 1.5em;
+    float: right;
+    padding-top: 20px;
+    padding-right: 17.5px;
+}
+.mListWrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mListWrap li {
+    padding: 17.5px;
+    list-style: none;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+.mListWrap a {
+    color: var(--headerColor);
+    text-decoration: none;
+}
+.head .titleWrap {
+    position: relative;
+    font-size: 2em;
+    line-height: 117%;
+    font-weight: bold;
+    top: 45%;
+    transform: translateY(-45%);
+}
+.head .sub {
+    position: relative;
+    font-size: 1.3em;
+    top: 45%;
+    transform: translateY(-45%);
+}
+.head .qBtn {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+    top: 46%;
+    transform: translateY(-46%);
+    width: 183px;
+    height: 47px;
+    border-radius: 3px;
+    background-color: var(--headerColor);
+    color: var(--boldBlack);
+    text-decoration: none;
+    line-height: 47px;
+    font-size: 1em;
+    font-weight: bolder;
+}
+.proContainer {
+    display: block;
+    text-align: center;
+}
+.proContainer .card {
+    width: 330px;
+    height: 320px;
+    background-color: var(--headerColor);
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-right: 17.5px;
+    margin-left: 17.5px;
+    margin-top: 35px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 24px;
+}
+.proContainer header .fa-solid {
+    color: #4c74b9;
+    font-size: 50px;
+    margin-top: 41px;
+    margin-bottom: 18px;
+}
+.proContainer .title {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: var(--boldBlack);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.proContainer .content {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--lightBlack);
+    letter-spacing: 0.8px;
+    line-height: 20px;
+}
+.reviewContainer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 60px;
+}
+.reviewContainer .reviewCard {
+    width: 1340px;
+    display: inline-block;
+    margin-right: 17.5px;
+    margin-left: 17.5px;
+    margin-top: 35px;
+    height: 200px;
+    background-color: var(--headerColor);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 24px;
+    padding: 30px 30px 30px 0;
+    text-align: left;
+    vertical-align: middle;
+}
+.reviewCard .inInfo {
+    width: 300px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    border-right: solid 0.6px #000;
+}
+.reviewCard .score {
+    position: relative;
+    top: 26px;
+    font-size: 2.4em;
+    font-weight: bolder;
+}
+.reviewCard .fa-solid {
+    margin-top: 33px;
+    color: #fbad23;
+    font-size: 1.3em;
+}
+.reviewCard .pName {
+    margin-top: 10px;
+    color: var(--boldBlack);
+    font-size: 1em;
+}
+.reviewContainer .content {
+    font-size: 1em;
+    color: #131d42;
+    line-height: 22px;
+    margin-left: 330px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+.questionContainer {
+    margin-top: 100px;
+    margin-left: 15px;
+    width: 95%;
+}
+.questionContainer .question {
+    padding: 25px 0;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--boldBlack);
+    border-bottom: 0.6px solid #000;
+}
+.questionContainer .question.on {
+    border-bottom: 0;
+}
+.questionContainer .fa-solid {
+    float: right;
+    font-size: 1.3em;
+    transition: all .2s;
+}
+.questionContainer .question.on #open {
+    display: none;
+}
+.questionContainer .question #open {
+    display: block;
+}
+.questionContainer .question.on #close {
+    display: block;
+}
+.questionContainer .question #close {
+    display: none;
+}
+.questionContainer > .answer {
+    display: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--lightBlack);
+    padding: 20px 0 30px 0;
+    margin-bottom: 15px;
+    border-bottom: 0.6px solid #000;
+    line-height: 22px;
+}
+.contentContainer {
+    margin: 100px 0 120px 0;
+    padding: 50px 0 0 17.5px;
+    width: 100%;
+    height: 180px;
+    background-color: #131d42;
+}
+.contentContainer .title {
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 29px;
+    color: var(--headerColor);
+}
+.contentContainer .btn {
+    cursor: pointer;
+    margin: 20px 0 0 0;
+    float: left;
+    width: 183px;
+    height: 47px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 47px;
+    text-align: center;
+    transition: all 0.2s
+}
+.contentContainer .opt1 {
+    background-color: #3883FF;
+}
+.contentContainer .opt1 a {
+    text-decoration: none;
+    color: var(--headerColor);
+}
+.contentContainer .opt2 a {
+    color: #000;
+    text-decoration: none;
+}
+.contentContainer .opt2 {
+    color: #000;
+    margin: 20px 0 0 20px;
+    background-color: var(--headerColor);
+}
+.copyrightContainer {
+    padding: 35px 0 0 17.5px;
+    margin-top: 100px;
+    width: 100%;
+    height: 220px;
+    color: var(--headerColor);
+    background-color: #353535;
+}
+.copyrightContainer .maxWidth .title {
+    font-size: 2em;
+    font-weight: bolder;
+    line-height: 39px;
+    margin: 0 0 5px 0;
+}
+.copyrightContainer .subTitle {
+    font-size: 1em;
+    line-height: 17px;
+    margin: 0 0 1px 0;
+}
+.copyrightContainer .subTitle1 {
+    font-size: 1em;
+    line-height: 17px;
+    margin: 0 0 1px 0;
+    text-align: right;
+}
+.copyrightContainer a {
+    font-size: 1em;
+    line-height: 17px;
+    margin: 0 0 1px 0;
+    text-decoration: none;
+    color: var(--headerColor);
+}
+.copyrightContainer .copy {
+    margin: 52px 0 0 0;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 15px;
+    color: #C1BFBF;
+}
+
+@media (max-width: 1446px) {
+    .pcNav .logo {
+        margin-left: 40px;
+    }
+    .reviewContainer .reviewCard {
+        width: 1280px;
+        padding-right: 35px;
+    }    
+    .contentContainer {
+        padding-left: 35px;
+    }
+    .copyrightContainer {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+@media (max-width: 1391px) {
+    .pcNav ul {
+        display: none;
+    }
+    .pcNav .mMenu i {
+        display: inline-block;
+        color: var(--headerColor);
+    }
+    .reviewContainer .reviewCard {
+        width: 100%;
+        margin-left: 0;
+    }
+    .reviewCard .inInfo {
+        width: 200px;
+    }
+    .reviewContainer .content {
+        margin-left: 230px;
+        padding-right: 35px;
+    }
+    .copyrightContainer .subTitle1 {
+        position: relative;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .head .titleWrap {
+        font-size: 1.6em;
+    }
+    .head .sub {
+        font-size: 1em;
+    }
+    .reviewContainer .reviewCard {
+        width: 426px;
+        height: 360px;
+        margin-right: 17.5px;
+        margin-left: 17.5px;
+        padding: 0;
+    }
+    .reviewCard .inInfo {
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+        border-right: 0;
+        border-bottom: solid .6px #000;
+        float: none;
+    }
+    .reviewContainer .content {
+        top: 80px;
+        text-align: center;
+        margin: 0;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .contentContainer .title {
+        font-size: 1em;
+    }
+    .contentContainer .btn {
+        width: 100px;
+        font-size: .8em;
+    }
+    .copyrightContainer .subTitle1 {
+        text-align: left;
+        margin-top: 10px;
+    }
+    @media (max-width: 430px) {
+        .proContainer .card {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .reviewContainer .reviewCard {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
