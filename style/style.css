@@ -225,6 +225,10 @@ html {
     margin-top: 33px;
     color: #fbad23;
     font-size: 1.3em;
+    transition: all .3s;
+}
+.reviewCard:hover .fa-solid {
+    transform: rotate( 71deg );
 }
 .reviewCard .pName {
     margin-top: 10px;
