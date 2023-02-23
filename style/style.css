@@ -15,6 +15,10 @@ html {
     background-color: #f8f8f8;
     box-sizing: border-box;
 }
+::selection {
+    background-color: var(--pointLightBlue);
+    color: var(--headerColor);
+}
 .maxWidth {
     max-width: 1400px;
     margin: auto;
@@ -38,12 +42,12 @@ html {
     z-index: 10;
     transition: background-color .5s linear;
 }
-.pcNav .logo {
+.pcNav .logo a {
     font-size: 1.3em;
     font-weight: bold;
     padding-top: 20px;
-    margin-left: 17.5px;
     float: left;
+    text-decoration: none;
     color: var(--headerColor);
 }
 .pcNav .maxWidth ul {
@@ -133,7 +137,7 @@ html {
     text-align: center;
 }
 .proContainer .card {
-    width: 330px;
+    width: 435px;
     height: 320px;
     background-color: var(--headerColor);
     display: inline-block;
@@ -145,6 +149,26 @@ html {
     margin-left: 17.5px;
     margin-top: 35px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 24px;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+.proContainer .card:first-child {
+    margin-left: 0;
+}
+.proContainer .card:last-child {
+    margin-right: 0;
+}
+.proContainer .card:hover {
+    background-color: #4c74b9;
+}
+.proContainer .card:hover .fa-solid {
+    color: var(--headerColor);
+}
+.proContainer .card:hover .title {
+    color: var(--headerColor);
+}
+.proContainer .card:hover .content {
+    color: #f8f8f8;
 }
 .proContainer header .fa-solid {
     color: #4c74b9;
@@ -183,6 +207,13 @@ html {
     text-align: left;
     vertical-align: middle;
     box-sizing: border-box;
+    transition: all .3s;
+}
+.reviewContainer .reviewCard:hover .inInfo {
+    margin-top: -7px;
+}
+.reviewContainer .reviewCard:hover .content {
+    margin-top: -7px;
 }
 .reviewCard .inInfo {
     width: 300px;
@@ -190,6 +221,7 @@ html {
     float: left;
     text-align: center;
     border-right: solid 0.6px #000;
+    transition: all .3s;
 }
 .reviewCard .score {
     position: relative;
@@ -215,6 +247,7 @@ html {
     top: 50%;
     transform: translateY(-50%);
     position: relative;
+    transition: all .3s;
 }
 .questionContainer {
     margin-top: 100px;
@@ -265,10 +298,11 @@ html {
 }
 .contentContainer {
     margin: 100px 0 120px 0;
-    padding: 50px 0 0 17.5px;
+    padding: 50px 0 0 0;
     width: 100%;
-    height: 180px;
+    height: 220px;
     background-color: #131d42;
+    box-sizing: border-box;
 }
 .contentContainer .title {
     font-size: 1.6em;
@@ -416,11 +450,17 @@ html {
     .head .sub {
         font-size: 1em;
     }
+    .proContainer .card {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 20px;
+        padding-right: 20px;
+    }
     .reviewContainer .reviewCard {
-        width: 426px;
+        width: 100%;
         height: 360px;
-        margin-right: 17.5px;
-        margin-left: 17.5px;
         padding: 0;
     }
     .reviewCard .inInfo {
