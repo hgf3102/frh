@@ -102,26 +102,18 @@ html {
     color: var(--headerColor);
     text-decoration: none;
 }
+.head {
+    text-align: center;
+}
 .head .titleWrap {
-    position: relative;
+    padding-top: 240px;
     font-size: 2em;
     line-height: 117%;
     font-weight: bold;
-    top: 45%;
-    transform: translateY(-45%);
-}
-.head .sub {
-    position: relative;
-    font-size: 1.3em;
-    top: 45%;
-    transform: translateY(-45%);
 }
 .head .qBtn {
-    position: relative;
     display: inline-block;
     margin-top: 40px;
-    top: 46%;
-    transform: translateY(-46%);
     width: 183px;
     height: 47px;
     border-radius: 3px;
@@ -194,7 +186,7 @@ html {
     width: 100%;
     height: auto;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 120px;
 }
 .reviewContainer .reviewCard {
     width: 100%;
@@ -298,11 +290,15 @@ html {
 }
 .contentContainer {
     margin: 100px 0 120px 0;
-    padding: 50px 0 0 0;
+    padding-top: 50px;
     width: 100%;
     height: 220px;
-    background-color: #131d42;
+    background-image: url('../imgs/bg1.png');
+    background-position: center;
+    background-repeat: cover;
+    background-size: cover;
     box-sizing: border-box;
+    transition: all .3s;
 }
 .contentContainer .title {
     font-size: 1.6em;
@@ -324,33 +320,44 @@ html {
     transition: all 0.2s
 }
 .contentContainer .opt1 {
-    background-color: #3883FF;
+    background-color: var(--pointLightBlue);
+}
+.contentContainer .opt1:hover {
+    background-color: var(--headerColor);
+}
+.contentContainer .opt1:hover a {
+    color: var(--boldBlack);
 }
 .contentContainer .opt1 a {
     text-decoration: none;
     color: var(--headerColor);
 }
 .contentContainer .opt2 a {
-    color: #000;
+    color: var(--boldBlack);
     text-decoration: none;
 }
+.contentContainer .opt2:hover {
+    background-color: var(--pointLightBlue);
+}
+.contentContainer .opt2:hover a {
+    color: var(--headerColor);
+}
 .contentContainer .opt2 {
-    color: #000;
     margin: 20px 0 0 20px;
     background-color: var(--headerColor);
 }
 .footerContainer {
-    padding: 60px 0 0 17.5px;
+    padding: 60px 0 0 0;
     margin-top: 100px;
     width: 100%;
     background-color: #353535;
+    transition: all .3s;
 }
 .footerContainer .title h1 {
     font-size: 2em;
     color: var(--headerColor);
     font-weight: bold;
     margin-bottom: 25px;
-    padding: 0 17.5px;
 }
 .footerContainer .row {
 	display: flex;
@@ -358,7 +365,6 @@ html {
 }
 .footerContainer .col {
    width: 25%;
-   padding: 0 17.5px;
 }
 .footerContainer h2 {
 	font-size: 1.1em;
@@ -402,7 +408,7 @@ html {
 .footerContainer .copyright {
     color: #d7d7d7;
     font-size: 1em;
-    padding: 32px 17.5px;
+    padding: 32px 0;
 }
   
 @media (max-width: 1446px) {
@@ -412,8 +418,16 @@ html {
     .reviewContainer .reviewCard {
         width: 1280px;
         padding-right: 35px;
-    }    
+    }
+    .question {
+        width: 1280px;
+        margin: auto;
+        box-sizing: border-box;
+    }
     .contentContainer {
+        padding-left: 35px;
+    }
+    .footerContainer {
         padding-left: 35px;
     }
 }
