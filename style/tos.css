@@ -14,6 +14,10 @@ html {
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #f8f8f8;
 }
+::selection {
+    background-color: var(--pointLightBlue);
+    color: var(--headerColor);
+}
 header {
     width: 100%;
     background-color: var(--pointBlue);
@@ -83,6 +87,10 @@ header .title a {
     color: var(--lightBlack);
     line-height: 1.3em;
     margin-bottom: 40px;
+}
+.contentArea a {
+    color: var(--pointLightBlue);
+    text-decoration: none;
 }
 .footerContainer {
     padding: 60px 0 0 0;
