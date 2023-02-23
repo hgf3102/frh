@@ -446,6 +446,9 @@ html {
     .reviewCard .inInfo {
         width: 200px;
     }
+    .question {
+        width: 100%;
+    }
     .reviewContainer .content {
         margin-left: 230px;
         padding-right: 35px;
